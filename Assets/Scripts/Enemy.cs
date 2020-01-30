@@ -23,10 +23,17 @@ public class Enemy : MonoBehaviour
 
     #endregion
 
+    #region health_variables
+    public float maxHealth;
+    float currHealth;
+    #endregion
+
     #region Unity_functions
     private void Awake()
     {
         enemyRB = GetComponent<Rigidbody2D>();
+
+        currHealth = maxHealth;
     }
 
     private void Update()
@@ -58,6 +65,8 @@ public class Enemy : MonoBehaviour
         {
             if (hit.transform.CompareTag("Player"))
             {
+
+                hit.transform.GetComponent<PlayerController>().TakeDamage(explosionDamage);
                 Debug.Log("Hit Player with explosion");
 
                 Instantiate(explosionObj, transform.position, transform.rotation);
@@ -72,6 +81,24 @@ public class Enemy : MonoBehaviour
         {
             Explode();
         }
+    }
+    #endregion
+
+    #region health_functions
+    public void TakeDamage(float value)
+    {
+        currHealth -= value;
+        Debug.Log("Health is now " + currHealth.ToString());
+
+        if (currHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        Destroy(this.gameObject);
     }
     #endregion
 }

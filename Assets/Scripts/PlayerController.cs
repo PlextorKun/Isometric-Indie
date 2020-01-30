@@ -20,6 +20,11 @@ public class PlayerController : MonoBehaviour
     Vector2 currDirection;
     #endregion
 
+    #region health_variables
+    public float maxHealth;
+    float currHealth;
+    #endregion
+
     #region physics_components
     Rigidbody2D playerRB;
     #endregion
@@ -36,6 +41,8 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
 
         attackTimer = 0;
+
+        currHealth = maxHealth;
     }
 
     private void Update()
@@ -126,12 +133,40 @@ public class PlayerController : MonoBehaviour
             if (hit.transform.CompareTag("Enemy"))
             {
                 Debug.Log("tons of damage");
+                hit.transform.GetComponent<Enemy>().TakeDamage(damage);
             }
         }
 
         yield return new WaitForSeconds(endAnimationTiming);
 
         isAttacking = false;
+    }
+    #endregion
+
+    #region health_functions
+    public void TakeDamage(float value)
+    {
+        currHealth -= value;
+        Debug.Log("Health is now " + currHealth.ToString());
+
+
+
+        if (currHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    public void Heal(float value)
+    {
+        currHealth += value;
+        currHealth = Mathf.Min(currHealth, maxHealth);
+        Debug.Log("Health is now " + currHealth.ToString());
+    }
+
+    private void Die()
+    {
+        Destroy(this.gameObject);
     }
     #endregion
 }
