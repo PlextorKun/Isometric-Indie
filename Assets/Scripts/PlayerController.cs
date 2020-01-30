@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class PlayerController : MonoBehaviour
     #region health_variables
     public float maxHealth;
     float currHealth;
+    public Slider hpSlider;
     #endregion
 
     #region physics_components
@@ -43,6 +45,8 @@ public class PlayerController : MonoBehaviour
         attackTimer = 0;
 
         currHealth = maxHealth;
+
+        hpSlider.value = currHealth / maxHealth;
     }
 
     private void Update()
@@ -149,7 +153,7 @@ public class PlayerController : MonoBehaviour
         currHealth -= value;
         Debug.Log("Health is now " + currHealth.ToString());
 
-
+        hpSlider.value = currHealth / maxHealth;
 
         if (currHealth <= 0)
         {
@@ -162,6 +166,8 @@ public class PlayerController : MonoBehaviour
         currHealth += value;
         currHealth = Mathf.Min(currHealth, maxHealth);
         Debug.Log("Health is now " + currHealth.ToString());
+
+        hpSlider.value = currHealth / maxHealth;
     }
 
     private void Die()
