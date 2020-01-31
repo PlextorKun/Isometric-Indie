@@ -60,6 +60,8 @@ public class Enemy : MonoBehaviour
 
     private void Explode()
     {
+        FindObjectOfType<AudioManager>().Play("Explosion");
+
         RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, explosionRadius, Vector2.zero);
         foreach(RaycastHit2D hit in hits)
         {
@@ -87,6 +89,8 @@ public class Enemy : MonoBehaviour
     #region health_functions
     public void TakeDamage(float value)
     {
+        FindObjectOfType<AudioManager>().Play("BatHurt");
+
         currHealth -= value;
         Debug.Log("Health is now " + currHealth.ToString());
 

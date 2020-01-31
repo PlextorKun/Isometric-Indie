@@ -126,6 +126,8 @@ public class PlayerController : MonoBehaviour
 
         anim.SetTrigger("Attack");
 
+        FindObjectOfType<AudioManager>().Play("PlayerAttack");
+
         yield return new WaitForSeconds(hitboxTiming);
 
         Debug.Log("Cast hitbox now.");
@@ -150,6 +152,8 @@ public class PlayerController : MonoBehaviour
     #region health_functions
     public void TakeDamage(float value)
     {
+        FindObjectOfType<AudioManager>().Play("PlayerHurt");
+
         currHealth -= value;
         Debug.Log("Health is now " + currHealth.ToString());
 
@@ -172,6 +176,8 @@ public class PlayerController : MonoBehaviour
 
     private void Die()
     {
+        FindObjectOfType<AudioManager>().Play("PlayerDeath");
+
         Destroy(this.gameObject);
     }
     #endregion
