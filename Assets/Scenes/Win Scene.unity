@@ -464,7 +464,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1572521484596714048, guid: effcf79e388341547aebd246659d930b,
           type: 3}
-        m_MethodName: WinGame
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
