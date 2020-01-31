@@ -184,6 +184,9 @@ public class PlayerController : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("PlayerDeath");
 
         Destroy(this.gameObject);
+
+        GameObject gm = GameObject.FindWithTag("GameController");
+        gm.GetComponent<GameManager>().LoseGame();
     }
     #endregion
 
