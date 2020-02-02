@@ -500,6 +500,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6816363732133310097, guid: 4523714d5cf80b641b82e876e9a13c58,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 882050169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816363732133310097, guid: 4523714d5cf80b641b82e876e9a13c58,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7842210005932891468, guid: 4523714d5cf80b641b82e876e9a13c58,
         type: 3}
       propertyPath: m_Name
@@ -712,6 +722,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816363732133310097, guid: 4523714d5cf80b641b82e876e9a13c58,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 882050169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816363732133310097, guid: 4523714d5cf80b641b82e876e9a13c58,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7842210005932891468, guid: 4523714d5cf80b641b82e876e9a13c58,
         type: 3}
@@ -1087,6 +1107,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816363732133310097, guid: 4523714d5cf80b641b82e876e9a13c58,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 882050169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816363732133310097, guid: 4523714d5cf80b641b82e876e9a13c58,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7842210005932891468, guid: 4523714d5cf80b641b82e876e9a13c58,
         type: 3}
@@ -2211,6 +2241,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816363732133310097, guid: 4523714d5cf80b641b82e876e9a13c58,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 882050169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6816363732133310097, guid: 4523714d5cf80b641b82e876e9a13c58,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7842210005932891468, guid: 4523714d5cf80b641b82e876e9a13c58,
         type: 3}
