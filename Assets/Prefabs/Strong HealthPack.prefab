@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3101259576171486014}
   - component: {fileID: 6774194149692346734}
   m_Layer: 0
-  m_Name: HealthPack
+  m_Name: Strong HealthPack
   m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -239,4 +239,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab5d35ffc13378043982c2173f887030, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 1
+  healAmount: 10

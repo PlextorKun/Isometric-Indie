@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 990750941467172987}
   - component: {fileID: 5202109834378741351}
   m_Layer: 0
-  m_Name: Chest
+  m_Name: Strong Chest
   m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7842210005932891468}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18.89, y: 1.63, z: 10}
+  m_LocalPosition: {x: 18.89, y: 1.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d08d14a2969b743b1a8b14dc46e0e8fa, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.13883947, g: 0.754717, b: 0.3827435, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -142,5 +142,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330582eb9ffa5d14699e4eb9d5592e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPack: {fileID: 681615930073749345, guid: 1f16889a9f9f00147982680a75c47c7e,
+  healthPack: {fileID: 681615930073749345, guid: a036f3ac1177a41438ef939f703db125,
     type: 3}

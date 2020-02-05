@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 990750941467172987}
   - component: {fileID: 5202109834378741351}
   m_Layer: 0
-  m_Name: Chest
+  m_Name: Damage Chest
   m_TagString: Chest
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,5 +142,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330582eb9ffa5d14699e4eb9d5592e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPack: {fileID: 681615930073749345, guid: 1f16889a9f9f00147982680a75c47c7e,
+  healthPack: {fileID: 681615930073749345, guid: b89dd938c377f3f488db3c7ffcfc2e1c,
     type: 3}
