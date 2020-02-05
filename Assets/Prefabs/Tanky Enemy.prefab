@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 7936455647034758348}
   - component: {fileID: 7936455647034758349}
   m_Layer: 0
-  m_Name: Tanky Enemies
+  m_Name: Tanky Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,7 +221,7 @@ MonoBehaviour:
   explosionDamage: 4
   explosionRadius: 1
   explosionObj: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
-  maxHealth: 15
+  maxHealth: 1
 --- !u!95 &7936455647034758349
 Animator:
   serializedVersion: 3
