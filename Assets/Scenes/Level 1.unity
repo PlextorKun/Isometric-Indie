@@ -594,7 +594,7 @@ MonoBehaviour:
   attackspeed: 0.5
   hitboxTiming: 0.1
   endAnimationTiming: 0.1
-  maxHealth: 5
+  maxHealth: 10
   hpSlider: {fileID: 2027031888}
 --- !u!95 &356931564
 Animator:
@@ -3140,7 +3140,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797177131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.041577, y: -4.24, z: -10}
+  m_LocalPosition: {x: 4.8611116, y: -4.24, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

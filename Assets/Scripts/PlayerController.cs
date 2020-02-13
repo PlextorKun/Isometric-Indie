@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     #region health_variables
     public float maxHealth;
-    float currHealth;
+    public static float currHealth;
     public Slider hpSlider;
     #endregion
 
